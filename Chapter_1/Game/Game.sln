@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game.vcxproj", "{06EDC280-1187-4614-A248-E640C095FA6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8} = {9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tkEngine", "..\tkEngine\tkEngine.vcxproj", "{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Middle|x64 = Debug_Middle|x64
+		Debug_Middle|x86 = Debug_Middle|x86
+		Preview_Middle|x64 = Preview_Middle|x64
+		Preview_Middle|x86 = Preview_Middle|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Debug_Middle|x64.ActiveCfg = Debug_Middle|x64
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Debug_Middle|x64.Build.0 = Debug_Middle|x64
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Debug_Middle|x86.ActiveCfg = Debug_Middle|Win32
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Debug_Middle|x86.Build.0 = Debug_Middle|Win32
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Preview_Middle|x64.ActiveCfg = Preview_Middle|x64
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Preview_Middle|x64.Build.0 = Preview_Middle|x64
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Preview_Middle|x86.ActiveCfg = Preview_Middle|Win32
+		{06EDC280-1187-4614-A248-E640C095FA6B}.Preview_Middle|x86.Build.0 = Preview_Middle|Win32
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Debug_Middle|x64.ActiveCfg = Debug_Middle|x64
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Debug_Middle|x64.Build.0 = Debug_Middle|x64
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Debug_Middle|x86.ActiveCfg = Debug_Middle|Win32
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Debug_Middle|x86.Build.0 = Debug_Middle|Win32
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Preview_Middle|x64.ActiveCfg = Preview_Middle|x64
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Preview_Middle|x64.Build.0 = Preview_Middle|x64
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Preview_Middle|x86.ActiveCfg = Preview_Middle|Win32
+		{9E48DCB9-B936-4C81-BB4C-F3EAA794A8E8}.Preview_Middle|x86.Build.0 = Preview_Middle|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09844AF9-EE2D-4562-B863-045A6E0F3E41}
+	EndGlobalSection
+EndGlobal
