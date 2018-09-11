@@ -16,8 +16,7 @@ GameClearControl::~GameClearControl()
 }
 void GameClearControl::Awake()
 {
-	//プレイヤーにクリアを通知。
-	FindGO<Player>("Player")->NotifyGameClear();
+	
 	FindGO<GameCamera>("GameCamera")->NotifyGameClear();
 }
 bool GameClearControl::Start()

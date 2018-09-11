@@ -72,7 +72,7 @@ void GameCamera::Update()
 	//プレイヤの足元からちょっと上を注視点とする。
 	target.y += 50.0f;
 	//視点を計算する。
-	CVector3 toPos = { 0.0f, 350.0f, 550.0f };
+	CVector3 toPos = { 0.0f, 350.0f, -550.0f };
 	CVector3 pos = target + toPos;	//キャラクタを斜め上から見ているような視点にする。
 	//メインカメラに注視点と視点を設定する。
 	m_springCamera.SetTarget(target);

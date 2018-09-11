@@ -48,7 +48,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		SoundEngine().GetMasteringVoice()->SetVolume(0.1f);
 		//NewGO<Game>(0, "Game");
 		NewGO<Fade>(1, "Fade");
-		NewGO<Title>(0, nullptr);
+		NewGO<Game>(0, nullptr);
 		//ゲームループを実行。
 		Engine().RunGameLoop();
 	}

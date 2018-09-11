@@ -74,7 +74,7 @@ bool Game::Start()
 {
 	//カメラを設定。
 	MainCamera().SetTarget({ 0.0f, 50.0f, 0.0f });
-	MainCamera().SetPosition({ 0.0f, 300.0f, 300.0f });
+	MainCamera().SetPosition({ 0.0f, 300.0f, -300.0f });
 	MainCamera().SetNear(1.0f);
 	MainCamera().SetFar(10000.0f);
 	MainCamera().Update();
@@ -84,47 +84,10 @@ bool Game::Start()
 	m_gameCamera = NewGO<GameCamera>(0, "GameCamera");
 	//シーンライトを初期化。
 	InitSceneLight();
-	//プレイヤーのシルエットを作成。
-	m_playerSilhouette = NewGO<PlayerSilhouette>(0, nullptr);
+	
 	//プレイヤーを描画。
 	m_player = NewGO<Player>(0, "Player");
-	//敵を配置
-	CSkeleton enemyLoc;
-	enemyLoc.Load(L"loc/enemy.tks");
-	for (int i = 1; i < enemyLoc.GetNumBones(); i++) {
-		CBone* bone = enemyLoc.GetBone(i);
-		Enemy* enemy = NewGO <Enemy>(0, nullptr);
-		m_enemyList.push_back(enemy);
-		enemy->SetTags(enGameObject_Enemy);
-		const CMatrix& mat = bone->GetBindPoseMatrix();
-		CVector3 pos;
-		pos.x = mat.m[3][0];
-		pos.y = mat.m[3][2];
-		pos.z = -mat.m[3][1];
-		enemy->SetPosition(pos);
-		wchar_t moveFilePath[256];
-		swprintf_s(moveFilePath, L"pathData/enemy0%d_path.tks", i);
-		enemy->Init(moveFilePath);
-	}
-
-	//星を配置
-	CSkeleton starLoc;
-	starLoc.Load(L"loc/star.tks");
-	//星のレンダラーを作成。
-	m_starRenderer = NewGO<StarRenderer>(0, nullptr);
-	m_starRenderer->Init(starLoc.GetNumBones() - 1);
-	for (int i = 1; i < starLoc.GetNumBones(); i++) {
-		CBone* bone = starLoc.GetBone(i);
-		Star* star = NewGO <Star>(0, nullptr);
-		star->Init(*m_starRenderer);
-		const CMatrix& mat = bone->GetBindPoseMatrix();
-		CVector3 pos;
-		pos.x = mat.m[3][0];
-		pos.y = mat.m[3][2];
-		pos.z = -mat.m[3][1];
-		star->SetPosition(pos);
-		star->SetTags(enGameObject_Star);	//タグを設定。
-	}
+	
 	m_fade = FindGO<Fade>("Fade");
 	GraphicsEngine().GetShadowMap().SetLightDirection(m_directionLight->GetDirection());
 	m_bgmSource = NewGO<prefab::CSoundSource>(0, nullptr);
@@ -182,7 +145,6 @@ void Game::NotifyRestart()
 {
 	m_isGameOver = false;
 	m_gameCamera->NotifyRestart();
-	m_player->NotifyRestart();
 	for (auto& enemy : m_enemyList) {
 		enemy->NotifyRestart();
 	}
@@ -201,29 +163,7 @@ void Game::Update()
 		}
 		break;
 	case enState_InGame: {
-		m_waitTimer += GameTime().GetFrameDeltaTime();
-		if (m_waitTimer < 0.1f) {
-			//ゲームが開始して0.1秒経過するまでトーンマップの明暗順応はやらない。
-			GraphicsEngine().GetTonemap().Reset();
-		}
-		m_timer = max(0.0f, m_timer - GameTime().GetFrameDeltaTime());
-		//クリア判定
-		int coinCount = 0;
-		FindGameObjectsWithTag(enGameObject_Star, [&](IGameObject* go) {
-			(void)go;
-			coinCount++;
-		});
-		if ((coinCount == 0 || m_timer <= 0.0f)
-			&& !m_isGameClear
-			&& !m_isGameOver
-			&& m_player->IsPossibleClear()
-			) {
-			//全部のコインを取った。
-			m_isGameClear = true;
-			//ゲームクリア制御を作成。
-			m_gameClearControl = NewGO<GameClearControl>(0, nullptr);
-			m_timer = 0.0f;
-		}
+
 	}break;
 	}
 #if BUILD_LEVEL != BUILD_LEVEL_MASTER
@@ -240,44 +180,4 @@ void Game::Update()
 	m_directionLight->SetDirection(lightDir);
 	GraphicsEngine().GetShadowMap().SetLightDirection(m_directionLight->GetDirection());
 #endif
-}
-
-void Game::PostRender(CRenderContext& rc) 
-{
-	wchar_t text[256];
-	int minute = (int)m_timer / 60;
-	int sec = (int)m_timer % 60;
-	swprintf_s(text, L"%02d:%02d", minute, sec);
-	m_fontTest.Begin(rc);
-	
-	//文字を描画。
-	m_fontTest.Draw(
-		L"TIME ", 
-		{ -620.0f, 340.0f }, 
-		{ 1.0f, 0.0f, 0.0f, 1.0f }, 
-		0.0f, 
-		0.8f, 
-		{ 0.0f, 1.0f}
-	);
-	m_fontTest.Draw(
-		text,
-		{ -465.0f, 340.0f }, 
-		{ 1.0f, 0.0f, 0.0f, 1.0f },
-		0.0f,
-		0.8f,
-		{ 0.0f, 1.0f }
-	);
-
-	//コインの取得枚数を表示。
-	swprintf_s(text, L"STAR %04d", m_coinCount);
-	m_fontTest.Draw(
-		text,
-		m_scoreFontPosition,
-		{ 1.0f, 1.0f, 0.0f, 1.0f },
-		0.0f,
-		m_scoreFontScale,
-		{ 0.0f, 1.0f }
-	);
-
-	m_fontTest.End(rc);
 }

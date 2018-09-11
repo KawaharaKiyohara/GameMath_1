@@ -21,18 +21,6 @@ public:
 		return m_forward;
 	}
 	/*!
-	 *@brief	ゲームオーバーを通血。
-	 */
-	void NotifyGameOver();
-	/*!
-	 *@brief	リスタートを通知。
-	 */
-	void NotifyRestart();
-	/*!
-	 *@brief	ゲームクリアー。
-	 */
-	void NotifyGameClear();
-	/*!
 	 *@brief	クリアできる？
 	 */
 	bool IsPossibleClear() const
@@ -55,9 +43,6 @@ public:
 	}
 private:
 	void UpdateFSM();
-	void Move();
-	void Turn();
-	void AnimationController();
 	
 private:
 	enum EnAnimationClip {

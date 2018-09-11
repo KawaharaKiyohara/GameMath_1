@@ -8,8 +8,6 @@
 
 GameOverControl::GameOverControl()
 {
-	//
-	FindGO<Player>("Player")->NotifyGameOver();
 	FindGO<GameCamera>("GameCamera")->NotifyGameOver();
 }
 GameOverControl::~GameOverControl()
