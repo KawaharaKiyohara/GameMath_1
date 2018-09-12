@@ -231,19 +231,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Middle|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Low|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -252,46 +252,46 @@
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Middle|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Low|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Middle|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview_Middle|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Low|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview_Low|Win32'">
-    <OutDir>..\lib\x86\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -300,31 +300,31 @@
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Middle|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview_Middle|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Low|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview_Low|x64'">
     <TargetName>$(ProjectName).$(Configuration)</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
-    <OutDir>..\lib\x64\</OutDir>
+    <OutDir>$(ProjectDir)\..\..\..\exlib\$(Platform)</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
