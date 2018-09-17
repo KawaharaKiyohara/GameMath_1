@@ -39,21 +39,15 @@ void Star::Update()
 		}
 	}
 	else {
+		DeleteGO(this);
 		//HandsOn-1 星からプレイヤーに向かって伸びるベクトルvを計算する。
-		Player* pl = FindGO<Player>("ぷれいや～");
-		CVector3 v = pl->m_position - m_position;
-		//ちゃんと計算できているか確認のためにベクトルを可視化してみる。
-		dbg::DrawVector(v, m_position);
+	
+
 
 		//HandsOn-3 星とプレイヤーの距離が一定値以下になったら星を消す。
-		if (v.Length() < 20.0f) {
-			DeleteGO(this);
-		}
-		//HandsOn-2 vを正規化して、いい感じにスカラー倍して座標に加算する。
-		v.Normalize(); //これは正規化を行ってくれるCVector3のメンバ関数。
-		v *= 20.0f;    //vをいい感じにスカラー倍。
-		m_position += v;
 		
+
+		//HandsOn-2 vを正規化して、いい感じにスカラー倍して座標に加算する。
 		
 		
 	}
