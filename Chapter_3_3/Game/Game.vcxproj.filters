@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="今回のお題で使わないプログラム">
+      <UniqueIdentifier>{0a6a29e6-8bf5-4fef-a5d2-f267665630a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Background.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyPathMoveLoop.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Fade.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearCamera.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearControl.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverCamera.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverControl.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSilhouette.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="star.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="StarRenderer.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Player.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+    <ClCompile Include="Wind.cpp">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="Background.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyPathMoveLoop.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClearCamera.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClearControl.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverCamera.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverControl.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="star.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSilhouette.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="StarRenderer.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+    <ClInclude Include="Wind.h">
+      <Filter>今回のお題で使わないプログラム</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
