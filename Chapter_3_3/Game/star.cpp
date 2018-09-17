@@ -21,36 +21,27 @@ bool Star::Start()
 		m_starLight->SetLightingMaterialIDGroup(1 << enMaterialID_Star);
 		m_starLight->SetColor({ 30.0f, 30.0f, 30.0f, 1.0f });
 	}
+	//プレイヤーのインスタンスのアドレスをメンバ変数に記憶しておく。
 	m_player = FindGO<Player>("ぷれいや～");
 	return true;
 }
 void Star::Update()
 {
+	//プレイヤーのインスタンスを検索。
+	
 	if (!m_isGet) {
-		CVector3 dist = m_player->GetPosition() - m_position;
-		if (dist.Length() < 130.0f) {
+		CVector3 dist = m_player->m_position - m_position;
+		if (dist.Length() < 200.0f) {
 			FindGO<Game>("Game")->AddGetStarCount();
-			//コインゲット。
+			//コインゲット音を出す。
 			prefab::CSoundSource* s = NewGO<prefab::CSoundSource>(0);
 			s->Init(L"sound/coinGet.wav");
 			s->Play(false);
-			m_jumpSpeed = 500.0f;
 			m_isGet = true;
-			m_jumStartPosY = m_position.y;
 		}
 	}
 	else {
-		
-		m_position.y += m_jumpSpeed * GameTime().GetFrameDeltaTime();
-		m_jumpSpeed -= 980.0f * GameTime().GetFrameDeltaTime();
-		CQuaternion qAddRot;
-		qAddRot.SetRotation(CVector3::AxisY, 0.2f);
-		m_rotation.Multiply(qAddRot);
-		
-		
-		if (m_jumStartPosY > m_position.y) {
-			DeleteGO(this);
-		}
+		DeleteGO(this);
 	}
 	m_renderer->UpdateWorldMatrix(m_position, m_rotation, { 20.0f, 20.0f, 20.0f });
 }
