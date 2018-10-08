@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="other">
+      <UniqueIdentifier>{00f88c86-269b-469a-8479-6416a868a2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Assets">
+      <UniqueIdentifier>{ed0b04a6-fecd-4a2c-a462-59a8f4639f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Assets\modelData">
+      <UniqueIdentifier>{06086914-6aa4-4cad-9b07-6f9d357f04df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Assets\modelData\bg">
+      <UniqueIdentifier>{083457f3-b54d-4223-9c19-748f3dc6a6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Assets\sprite">
+      <UniqueIdentifier>{a6ce300a-b532-440d-b914-b4661d3015ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Question">
+      <UniqueIdentifier>{ab09d79c-2ed9-4904-bed0-66ca32061d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="other\Assets\modelData\star">
+      <UniqueIdentifier>{ce74d541-23df-41c5-83bf-e974dd480017}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Question_1.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestionBase.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="Fade.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_1.cpp" />
+    <ClCompile Include="Star.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="Question_2.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_2.cpp" />
+    <ClCompile Include="Question_3.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_3.cpp" />
+    <ClCompile Include="Question_4.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_4.cpp" />
+    <ClCompile Include="Question_5.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_5.cpp" />
+    <ClCompile Include="Question_6.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_6.cpp" />
+    <ClCompile Include="Question_7.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_7.cpp" />
+    <ClCompile Include="Question_8.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_8.cpp" />
+    <ClCompile Include="Question_9.cpp">
+      <Filter>other\Question</Filter>
+    </ClCompile>
+    <ClCompile Include="Mission_9.cpp" />
+    <ClCompile Include="QuestionSelect.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>other\Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="Question_1.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestionBase.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Star.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_2.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_3.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_4.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_5.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_6.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_7.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_8.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="Question_9.h">
+      <Filter>other\Question</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestionSelect.h">
+      <Filter>other</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc">
+      <Filter>other\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Assets\modelData\unityChan.fbx">
+      <Filter>other\Assets\modelData</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\bg\bg.fbx">
+      <Filter>other\Assets\modelData\bg</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\modelData\star\star.FBX">
+      <Filter>other\Assets\modelData\star</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\sprite\dummy.png">
+      <Filter>other\Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\fade.png">
+      <Filter>other\Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\TItle.jpg">
+      <Filter>other\Assets\sprite</Filter>
+    </ImageContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\modelData\utc_spec.tga">
+      <Filter>other\Assets\modelData</Filter>
+    </Image>
+    <Image Include="Assets\modelData\utc_nomal.tga">
+      <Filter>other\Assets\modelData</Filter>
+    </Image>
+    <Image Include="Assets\modelData\bg\bgSpec.png">
+      <Filter>other\Assets\modelData\bg</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
