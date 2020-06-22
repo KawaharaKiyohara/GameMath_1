@@ -180,16 +180,8 @@
     <ImageContentTask Include="Assets\sprite\TItle.jpg">
       <Filter>other\Assets\sprite</Filter>
     </ImageContentTask>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\modelData\utc_spec.tga">
-      <Filter>other\Assets\modelData</Filter>
-    </Image>
-    <Image Include="Assets\modelData\utc_nomal.tga">
-      <Filter>other\Assets\modelData</Filter>
-    </Image>
-    <Image Include="Assets\modelData\bg\bgSpec.png">
-      <Filter>other\Assets\modelData\bg</Filter>
-    </Image>
+    <ImageContentTask Include="Assets\modelData\utc_nomal.tga" />
+    <ImageContentTask Include="Assets\modelData\utc_spec.tga" />
+    <ImageContentTask Include="Assets\modelData\bg\bgSpec.png" />
   </ItemGroup>
 </Project>
